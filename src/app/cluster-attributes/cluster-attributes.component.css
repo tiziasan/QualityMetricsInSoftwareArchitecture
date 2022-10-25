@@ -1,7 +1,14 @@
-ngx-cytoscape {
-  height: 50vh;
-  float: left;
-  position: relative;
-  border: solid #21c0c0;
-  width: 50em;
+.demo-chart{
+  margin-top: 60px;
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image{
+  width: 150px;
+  height: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
+  position: fixed;
 }

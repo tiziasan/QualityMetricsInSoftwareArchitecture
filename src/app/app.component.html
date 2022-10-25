@@ -26,6 +26,11 @@
     top: 0;
     width: 100%
   }
+  .clusterImage{
+    width: 100%;
+    margin-top: 60px;
+    height: 100%;
+  }
 
   h1,
   h2,
@@ -309,6 +314,8 @@
     }
   }
 
+
+
   @media screen and (max-width: 575px) {
     svg#rocket-smoke {
       display: none;
@@ -322,7 +329,8 @@
   <span class="margin">Quality Metrics In Software Architecture</span>
   <button class="margin" mat-raised-button href="https://www.google.com/" target="_blank" (click)="loadMetrics()">Metrics</button>
   <button class="margin" mat-raised-button href="https://www.google.com/" target="_blank" (click)="loadAttributes()">Quality Attributes</button>
-  <button class="margin" mat-raised-button href="https://www.google.com/" target="_blank" (click)="loadCluster()">Clustering of metrics and quality attributes</button>
+  <button class="margin" mat-raised-button href="https://www.google.com/" target="_blank" (click)="loadCluster()">Interactive Clustering of metrics and quality attributes</button>
+  <button class="margin" mat-raised-button href="https://www.google.com/" target="_blank" (click)="loadClusterImage()">Static Clustering of metrics and quality attributes</button>
 
 
 </div>
@@ -335,6 +343,9 @@
 
 <div *ngIf="displayCluster">
   <app-cluster-attributes></app-cluster-attributes>
+</div>
+<div *ngIf="displayClusterImage">
+  <img src="assets/Clustering.png" class="clusterImage">
 </div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
